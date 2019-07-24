@@ -1,5 +1,5 @@
 {
-  "name": "quicktime",
+  "name": "@ericadamski/quicktime",
   "version": "1.0.0",
   "description": "⏱ A tiny set of utilities to compare JS dates.",
   "main": "dist/quicktime.js",

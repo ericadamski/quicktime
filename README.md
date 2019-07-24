@@ -1,17 +1,17 @@
-# quicktime
+# @ericadamski/quicktime
 
 ⏱ A tiny set of utilities to compare JS dates.
 
 ## Installation
 
 ```
-yarn add quicktime
+yarn add @ericadamski/quicktime
 ```
 
 or
 
 ```
-npm i quicktime
+npm i @ericadamski/quicktime
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Each function takes two JS Dates and a third possible parameter that specifies t
 Check if a give time is after another time.
 
 ```javascript
-import { isAfter } from "quicktime";
+import { isAfter } from "@ericadamski/quicktime";
 
 isAfter(new Date("10/10/2010"), new Date()); // false
 ```
@@ -33,7 +33,7 @@ isAfter(new Date("10/10/2010"), new Date()); // false
 Check if a give time is before another time.
 
 ```javascript
-import { isBefore } from "quicktime";
+import { isBefore } from "@ericadamski/quicktime";
 
 isBefore(new Date("10/10/2010"), new Date()); // true
 ```
@@ -43,7 +43,7 @@ isBefore(new Date("10/10/2010"), new Date()); // true
 Check if a give time is before another time.
 
 ```javascript
-import { isEqual } from "quicktime";
+import { isEqual } from "@ericadamski/quicktime";
 
 isEqual(new Date("10/10/2010"), new Date()); // false
 ```
@@ -65,7 +65,7 @@ The available time segments to compare with are:
 ### `isAfter`
 
 ```javascript
-import { isAfter } from "quicktime";
+import { isAfter } from "@ericadamski/quicktime";
 
 isAfter(new Date("10/10/2010"), new Date("11/10/2010"), "days"); // false
 ```
@@ -75,7 +75,7 @@ isAfter(new Date("10/10/2010"), new Date("11/10/2010"), "days"); // false
 Check if a give time is before another time.
 
 ```javascript
-import { isBefore } from "quicktime";
+import { isBefore } from "@ericadamski/quicktime";
 
 isBefore(new Date("10/10/2010"), new Date("11/10/2010"), "days"); // true
 ```
@@ -85,7 +85,7 @@ isBefore(new Date("10/10/2010"), new Date("11/10/2010"), "days"); // true
 Check if a give time is before another time.
 
 ```javascript
-import { isEqual } from "quicktime";
+import { isEqual } from "@ericadamski/quicktime";
 
 isEqual(new Date("10/10/2010"), new Date("10/10/2010"), "days"); // true
 
