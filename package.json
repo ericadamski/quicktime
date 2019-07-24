@@ -1,0 +1,37 @@
+{
+  "name": "quicktime",
+  "version": "1.0.0",
+  "description": "⏱ A tiny set of utilities to compare JS dates.",
+  "main": "dist/quicktime.js",
+  "umd:main": "dist/quicktime.umd.js",
+  "module": "dist/quicktime.mjs",
+  "license": "MIT",
+  "author": "Eric Adamski <er.adamski@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericadamski/quicktime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericadamski/quicktime/issues"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "compare"
+  ],
+  "files": [
+    "dist/*.js"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "microbundle": "^0.11.0"
+  },
+  "scripts": {
+    "prepublishOnly": "yarn test && yarn build",
+    "test": "jest",
+    "build": "microbundle build index.js -o dist"
+  }
+}
